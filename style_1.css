@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    text-align: center;
+}
+#inn-page
+{
+ animation:bookAnimation 2s  ease-in-out infinite;
+
+}
+#outer-page,
+#small-book,
+#girl
+{
+ animation: wrapper 2s ease-in-out infinite;
+ transform-origin: left center;
+ 
+}
+
+@keyframes bookAnimation {
+  from{
+    transform: rotateY(0deg)
+
+  }
+  to{
+    transform: rotateY(180deg)
+  }
+  }
+  @keyframes wrapper{
+    form{
+        transform: rotateX(0deg);
+    }
+    to{
+        transform: rotateX(13deg);
+    }
+  }
+
+
